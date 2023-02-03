@@ -49,7 +49,7 @@ export class GroceryList extends Component{
                     <button onClick={() => this.addItem(this.state.userInput)} className="add">Add</button>
                 </div>
                 <ul>
-                    {this.state.groceryList.map((item, index) => (<li onClick={this.crossedWord} key={index}> <img src={bag} className="pic"/> {item} </li>))}
+                    {this.state.groceryList.map((item, index) => (<li onClick={this.crossedWord} key={index}> <img src={bag} className="pic" alt="bag"/> {item} </li>))}
                 </ul>
                 <div className='container'>
                     <button onClick={() => this.deleteItem()} className="delete">Delete</button>
